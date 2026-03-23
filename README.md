@@ -7,7 +7,7 @@ This is a demo Python project designed to showcase a CI/CD pipeline for Python p
 - **Linting** with flake8 (see the `lint` target in the Makefile).
 - A **build step** to package the project.
 
-## Getting Started
+## Getting Startedffafa
 
 It's recommended to create a virtualenv first:
 
