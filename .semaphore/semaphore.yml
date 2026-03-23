@@ -19,6 +19,10 @@ blocks:
           commands:
             - pip install -r requirements.txt
             - cache store
+      agent:
+        machine:
+          type: e1-standard-2
+          os_image: ubuntu2404
   - name: "\U0001F50D Code Quality"
     dependencies:
       - "\U0001F6E0️ Setup and Cache"
@@ -28,6 +32,10 @@ blocks:
           commands:
             - pip install -r requirements.txt
             - make lint
+      agent:
+        machine:
+          type: e1-standard-2
+          os_image: ubuntu2404
   - name: "\U0001F9EA Test Suite"
     dependencies:
       - "\U0001F6E0️ Setup and Cache"
@@ -38,3 +46,7 @@ blocks:
           commands:
             - cache restore
             - make test
+      agent:
+        machine:
+          type: e1-standard-2
+          os_image: ubuntu2404
